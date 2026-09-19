@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PSTS 1</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="bg-red-800 w-full">
+            <h1 class="text-white text-center">Student Creativity Festival</h1>
+            <p class="text-white text-center">Showcase Your Creativity, Skills and Innovative Ideas</p>
+        </header>
+
+        <div class=" flex md:items-center">    
+            <form>
+                <table>
+                <thead>
+                    <tr>
+                        <th colspan="2"><label>Registration Form</label></th>
+                    </tr>
+                </thead>
+                
+                <tr>
+                    <td><label>Student Name</label><br></td>
+                    <td><input type="text" name="name" placeholder="Enter your full name" maxlength="50" required><br></td>
+                </tr>
+
+                <tr><td><label>Class</label><br></td>
+                <td><select name="class" placeholder="----------" required>
+                    <option>X</option>
+                    <option>XI</option>
+                    <option>XII</option>
+                </select><br></td>
+                </tr>
+
+                <tr><td rowspan="2"><label>Gender</label><br></td>
+                <td><input type="radio" name="gender" value="Male" required>Male</td>
+                <td><input type="radio" name="gender" value="Female">Female<br></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr><td><label>Competition Category</label><br></td>
+                <td><select name="competition" placeholder="----------" required>
+                    <option>Web Development</option>
+                    <option>IoT Project</option>
+                    <option>Graphic Design</option>
+                    <option>Public Speaking</option>
+                    <option>Photography</option>
+                </select><br></td>
+                </tr>
+
+                <tr><td rowspan="2"><label>Participant Type</label><br></td><br>
+                <td><input type="radio" name="participant" value="Individual" required>Individual</td>
+                <td><input type="radio" name="participant" value="Team">Team<br></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr><td><label>Team Name</label><br></td>
+                <td><input type="text" name="teamname" placeholder="Enter your team's name" maxlength="50"><br></td>
+                </tr>
+
+                <tr><td><label>Contact Number</label><br></td>
+                <td><input type="tel" placeholder="08xxxxxxxx" required><br></td>
+
+                <tr><td><label class="text-justify">Project Description</label><br></td>
+                <td><textarea rows="5" cols="40" placeholder="Describe your project or competition entry..." required></textarea><br></td>
+                </tr>
+                </tbody>
+                <tr><td></td>
+                    <td><button type="submit" value="Submit">Register Now</button></td>
+                </tr>
+                </table>
+            </form>
+        </div><br><br>
+
+        <div class="flex justify-items-center">
+            <table>
+                <thead class="bg-red-800">
+                    <tr>
+                        <th class="text-white">No</th>
+                        <th class="text-white">Participant</th>
+                        <th class="text-white">Class</th>
+                        <th class="text-white">Category</th>
+                        <th class="text-white">Team</th>
+                        <th class="text-white">Status</th>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="w-20 text-center">1</td>
+                        <td class="w-40">Ahmad Fauzan</td>
+                        <td class="w-30 text-center">X</td>
+                        <td class="w-40 text-center">Web Development</td>
+                        <td class="w-40 text-center">CodeX</td>
+                        <td class="w-40 text-center">Registered</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-center">2</td>
+                        <td>Aisyah Putri</td>
+                        <td class="text-center">XI</td>
+                        <td class="text-center">IoT Project</td>
+                        <td class="text-center">SmartTech</td>
+                        <td class="text-center">Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer class="bg-red-800 w-full">
+            <p class="text-white text-center">&copy;2026 - 'Aisyah X-8</p>
+        </footer>
+    </body>
+</html>
